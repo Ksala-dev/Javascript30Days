@@ -2,6 +2,7 @@
       const addItems = document.querySelector(".add-items");
       const itemsList = document.querySelector(".plates");
       const items = JSON.parse(localStorage.getItem("items")) || [];
+      const clearBtn = document.querySelector('.clearAll')
 
       function addItem(e) {
         e.preventDefault();
@@ -45,3 +46,12 @@
       itemsList.addEventListener("click", toggleDone);
 
       populateList(items, itemsList);
+
+      clearBtn.addEventListener('click', clearAll)
+
+      function clearAll() {
+        itemsList.innerHTML = '' 
+        localStorage.clear();
+        location.reload();
+      }
+
