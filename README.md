@@ -1,1 +1,1 @@
-# Javascript30Days
+# Javascript30MiniProjects
