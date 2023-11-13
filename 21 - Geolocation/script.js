@@ -8,5 +8,5 @@ navigator.geolocation.watchPosition((data) => {
     arrow.style.transform = `rotate(${data.coords.heading}deg)`
 }, (err) => {
     console.log(err)
-    alert('Allow that ot work!')
+    alert('Allow that to work!')
 });
