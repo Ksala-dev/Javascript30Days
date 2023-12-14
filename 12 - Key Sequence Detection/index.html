@@ -8,24 +8,7 @@
       src="https://www.cornify.com/js/cornify.js"
     ></script>
     <link rel="icon" href="https://fav.farm/🔥" />
+    <script src="script.js" defer></script>
   </head>
-  <body>
-    <script>
-      const pressed = [];
-      const secretCode = "secret";
-      window.addEventListener("keyup", (e) => {
-        console.log(e.key);
-        pressed.push(e.key);
-        pressed.splice(
-          -secretCode.length - 1,
-          pressed.length - secretCode.length
-        );
-        if (pressed.join("").includes(secretCode)) {
-          console.log("TA-DAAAA!");
-          cornify_add();
-        }
-        console.log(pressed);
-      });
-    </script>
-  </body>
+  <body></body>
 </html>
