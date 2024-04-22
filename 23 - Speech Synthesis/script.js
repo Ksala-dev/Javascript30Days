@@ -5,4 +5,10 @@
   const speakButton = document.querySelector('#speak');
   const stopButton = document.querySelector('#stop');
 
-  
+  msg.text = document.querySelector('[name="text"]').value
+
+  function populateVoices() {
+    
+  }
+
+  speechSynthesis.addEventListener('voiceschanged', populateVoices)
